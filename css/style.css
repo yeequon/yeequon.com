@@ -369,12 +369,9 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .case-chart { width: 100%; height: auto; aspect-ratio: 2 / 1; }
 .accent-blue .chart-line, .accent-blue .chart-dot { stroke: var(--blue); fill: var(--blue); }
 .accent-green .chart-bar { fill: var(--green); }
-.accent-ochre .chart-ring-bg { fill: none; stroke: var(--border); stroke-width: 8; }
-.accent-ochre .chart-ring {
-  fill: none; stroke: var(--ochre); stroke-width: 8; stroke-linecap: round;
-  stroke-dasharray: 240; stroke-dashoffset: 60; transform: rotate(-90deg); transform-origin: center;
-}
-.accent-ochre .chart-ring-2 { stroke: var(--blue); stroke-dashoffset: 100; }
+.accent-ochre .chart-ring-outer { fill: none; stroke: var(--ochre); stroke-width: 2; opacity: 0.35; }
+.accent-ochre .chart-ring-mid   { fill: none; stroke: var(--ochre); stroke-width: 2; opacity: 0.7; }
+.accent-ochre .chart-ring-inner { fill: none; stroke: var(--ochre); stroke-width: 8; }
 .chart-line { fill: none; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
 .chart-dot { r: 4; }
 .chart-bar { rx: 3; }
